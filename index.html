@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Portfolio - Hero Section</title>
+  <link rel="stylesheet" href="styles1.css" />
+</head>
+<body>
+ <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="themeSwitcher">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Crafting Imagination into 3D Reality</h1>
+      <p>Explore my world of design, detail, and dimension.</p>
+      <div class="cta-buttons">
+        <button onclick="scrollToSection('portfolio')">View Portfolio</button>
+        <button onclick="scrollToSection('contact')">Get in Touch</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+
+</body>
+</html>
+<!-- About Me Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <p class="about-text">
+      I’m a passionate 3D designer with a strong eye for detail and a love for transforming concepts into immersive digital models.
+      With experience in modeling and web integration, I bring creativity and precision to every project.
+    </p>
+    <div class="skills">
+      <h3>Tools & Skills</h3>
+      <ul>
+        <li>Bentley watergems</li>
+        <li>SolidWorks</li>
+        <li>Three.js</li>
+        <li>WebGL</li>
+        <li>Inventor Professional</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Featured Projects Section -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-container">
+    <h2>Featured 3D Projects</h2>
+    <div class="project-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+	        <img src="project torroid propeller.jpg" alt="Model 1" />
+        <h3>Torroid propeller</h3>
+		<p>3D Model of Torroid propeller designed in Solidworks.</p>
+         <a href="model3-viewer.html" class="details-button">View Model in detail </a>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="toggle clamp assembly.jpg" alt="Model 2" />
+        <h3>Toggle clamp assembly</h3>
+        <p>3D Model of Toggle clamp assembly designed in Solidworks.</p>
+         <a href="model2-viewer.html" class="details-button">View Model in detail </a>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="Hour glass.jpg" alt="Model 3" />
+        <h3>Hour glass</h3>
+        <p>3D Model of Hour glass designed in Solidworks.</p>
+        <a href="model1-viewer.html" class="details-button">View Model in detail </a>
+      </div>
+	  <!-- Project card 4 -->
+	  <div class="project-card">
+	   <img src="box assembly.jpg" alt="Model 4" />
+        <h3>Box assembly</h3>
+        <p>3D Model of a simple Box with top designed and assembled in Solidworks.</p>
+        <a href="model4-viewer.html" class="details-button">View Model in detail </a>
+      </div>
+	   <!-- Project card 5 -->
+	  <div class="project-card">
+	   <img src="fan bracket assembly.jpg" alt="Model 5" />
+        <h3>Fan bracket assembly</h3>
+        <p>Fan bracket housing for a pygmy fan modelled and assembled using solidworks.</p>
+        <a href="model5-viewer.html" class="details-button">View Model in detail </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Interactive Section -->
+<!--
+<section class="interactive-section">
+  <div class="interactive-container">
+    <h2 class="fade-in">Why 3D Design Matters</h2>
+    <p class="fade-in">
+      3D design brings concepts to life. It bridges the gap between imagination and reality, enabling visual storytelling, product visualization, and immersive experiences.
+    </p>
+    <div class="fade-in box">
+      <h3>Immersive</h3>
+      <p>Engage viewers with spatial depth and motion.</p>
+    </div>
+    <div class="fade-in box">
+      <h3>Functional</h3>
+      <p>Prototype your ideas with accuracy and interactivity.</p>
+    </div>
+    <div class="fade-in box">
+      <h3>Impactful</h3>
+      <p>Leave a lasting impression with visual excellence.</p>
+    </div>
+  </div>
+</section>
+-->
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <p>If you’d like to collaborate or have any questions, feel free to reach out!</p>
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>J_I_N 3D GALLERY</h3>
+      <p>Turning ideas into interactive 3D experiences.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#" target="_blank" aria-label="Instagram">📸</a>
+      <a href="#" target="_blank" aria-label="LinkedIn">💼</a>
+      <a href="#" target="_blank" aria-label="GitHub">💻</a>
+    </div>
+
+    <p class="footer-credit">© 2025 J_I_N3D GALLERY. All rights reserved.</p>
+  </div>
+</footer>
